@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
-
+import 'flowbite';
 
 export default function Home() {
 
@@ -72,7 +72,7 @@ export default function Home() {
           type: 'loop',
           perPage: 6,
           perMove: 1,
-          gap: '2rem',
+          gap: '2px',
           autoplay: true,
           interval: 2000, // Adjust the interval as needed (in milliseconds)
           pauseOnHover: false,
@@ -120,20 +120,7 @@ export default function Home() {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Third Culture</title>
   
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossOrigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+ 
   <div className="new-testing-tag">
     <span>
       {" "}
@@ -162,14 +149,14 @@ export default function Home() {
         <div className="w-full md:w-1/2 pr-4 pl-4 flex justify-center items-center">
           <div className="d-2">
             <img
-              src="images/Third-culture-rechanged-logo.png"
+              src="images/useef.png"
               alt=""
               className="Main-content-header"
             />
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 justify-center items-center">
-          <div className="d-3 ">
+          <div className="d-3  flex justify-center items-center gap-3">
             <i className="fa-solid fa-magnifying-glass" />
             <i className="fa-solid fa-user" />
             <span className="login-txt">Login</span>
@@ -183,94 +170,89 @@ export default function Home() {
   <div className="hero-flex-containerr flex">
     <div className="first">
       <div className="temp-hamburg">
-        <nav className="relative flex flex-wrap items-center content-between py-3 px-4 wrap text-black">
-          <div className="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4">
-            <button
-              className="py-1 px-2 text-md leading-normal bg-transparent border border-transparent rounded custom-focus"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span className="px-5 py-1 border border-gray-600 rounded" />
-            </button>
-            <div
-              className="offcanvas offcanvas-start text-bg-white"
-              tabIndex={-1}
-              id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel"
-            >
-              <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  Dark offcanvas
-                </h5>
-                <button
-                  type="button"
-                  className="btn-close btn-close-black"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                />
-              </div>
-              <div className="offcanvas-body">
-                <ul className="flex flex-wrap list-reset pl-0 mb-0 justify-end flex-grow-1 pe-3">
-                  <li className="">
-                    <a className="inline-block py-2 px-4 no-underline active" aria-current="page" href="#">
-                      Home
-                    </a>
-                  </li>
-                  <li className="">
-                    <a className="inline-block py-2 px-4 no-underline" href="#">
-                      Link
-                    </a>
-                  </li>
-                  <li className=" relative">
-                    <a
-                      className="inline-block py-2 px-4 no-underline  inline-block w-0 h-0 ml-1 align border-b-0 border-t-1 border-r-1 border-l-1"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <ul className=" absolute left-0 z-50 float-left hidden list-reset	 py-2 mt-1 text-base bg-white border border-gray-300 rounded dropdown-menu-dark">
-                      <li>
-                        <a className="block w-full py-1 px-6 font-normal text-gray-900 whitespace-no-wrap border-0" href="#">
-                          Action
-                        </a>
-                      </li>
-                      <li>
-                        <a className="block w-full py-1 px-6 font-normal text-gray-900 whitespace-no-wrap border-0" href="#">
-                          Another action
-                        </a>
-                      </li>
-                      <li>
-                        <hr className="h-0 my-2 overflow-hidden border-t-1 border-gray-300" />
-                      </li>
-                      <li>
-                        <a className="block w-full py-1 px-6 font-normal text-gray-900 whitespace-no-wrap border-0" href="#">
-                          Something else here
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <form className="flex mt-3" role="search">
-                  <input
-                    className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button className="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-green-500 text-white hover:green-600" type="submit">
-                    Search
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </nav>
+        
+
+{/* <!-- drawer init and show --> */}
+<div class="text-center">
+   <button class="text-white    font-medium rounded-lg text-sm px-5 py-2.5 " type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+   <i class="fa-solid fa-bars text-3xl"></i>
+   </button>
+</div>
+
+{/* <!-- drawer component --> */}
+<div id="drawer-navigation" class="fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
+    <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+    <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        <span class="sr-only">Close menu</span>
+    </button>
+  <div class="py-4 overflow-y-auto">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                  <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"/>
+                  <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/>
+               </svg>
+               <span class="ms-3">Dashboard</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                  <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
+               <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
+               <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                  <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                  <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                  <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                  <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+</div>
+
       </div>
     </div>
     <div className="second">
@@ -280,21 +262,21 @@ export default function Home() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-item wrapper carousel-image-control active">
+          <div className="carousel-item wrapper bg-[url('../public/images/hero-img.png')] carousel-image-control active">
             <div className="carousel-inner-txt">
               <p className="year-carousel-txt">2016</p>
               <p className="wheather-carousel-txt uppercase">Summer</p>
               <p className="month-speciality-text uppercase">collection</p>
             </div>
           </div>
-          <div className="carousel-item wrapper-1">
+          <div className="carousel-item wrapper-1 bg-[url('../public/images/hero-img.png')]">
             <div className="carousel-inner-txt">
               <p className="year-carousel-txt">2016</p>
               <p className="wheather-carousel-txt uppercase">Summer</p>
               <p className="month-speciality-text uppercase">collection</p>
             </div>
           </div>
-          <div className="carousel-item wrapper-2">
+          <div className="carousel-item wrapper-2 bg-[url('../public/images/hero-img.png')]">
             <div className="carousel-inner-txt">
               <p className="year-carousel-txt">2016</p>
               <p className="wheather-carousel-txt uppercase">Summer</p>
@@ -332,7 +314,7 @@ export default function Home() {
       <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
         <div className="relative flex flex-col min-w-0 rounded break-words bor bg-white " style={{ width: "18rem" }}>
           <img src="images/box-img.png" className="w-full " alt="..." />
-          <div className="flex-auto">
+          <div className="flex-auto p-6">
             <h5 className="mb-3 uppercase text-center">
               white shirt
             </h5>
@@ -511,540 +493,825 @@ export default function Home() {
     Trending
   </span>
      </div> */}
-  <ul className="flex flex-wrap list-none pl-0 mb-0 border-b border-gray-200 justify-center items-center my-4 gap-4 p-6" role="tablist">
-        <li role="presentation">
-          <button
-            className={`inline-block py-2 px-4 no-underline uppercase ${activeTab === 'home' ? 'border-b-2 border-blue-500' : ''}`}
-            onClick={() => handleTabClick('home')}
-            type="button"
-            role="tab"
-            aria-selected={activeTab === 'home'}
-          >
-            New Collection
-          </button>
-        </li>
-        <li role="presentation">
-          <button
-            className={`inline-block py-2 px-4 no-underline uppercase ${activeTab === 'trending' ? 'border-b-2 border-blue-500' : ''}`}
-            onClick={() => handleTabClick('trending')}
-            type="button"
-            role="tab"
-            aria-selected={activeTab === 'trending'}
-          >
-            Trending
-          </button>
-        </li>
-      </ul>
-
-      <div className="tab-content container mx-auto sm:px-4 mt-3">
-        <div className={`tab-pane ${activeTab === 'home' ? 'block' : 'hidden'}`} role="tabpanel">
-          {/* Home content cards */}
-          <div className="flex flex-wrap justify-center">
-            <div className="w-full md:w-1/4 sm:w-1/2 p-4 flex justify-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: '18rem' }}>
-                <Image src="/images/box-img.png" className="w-full" alt="..." width={288} height={288} />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">White Shirt</h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-through">1305</span> <span className="price">₹185</span> <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center">S M L XL <span>XXL</span></p>
-                </div>
-              </div>
-            </div>
-            {/* Add more cards as needed */}
-          </div>
-        </div>
-        
-        <div className={`tab-pane ${activeTab === 'trending' ? 'block' : 'hidden'}`} role="tabpanel">
-          {/* Trending content cards */}
-          <div className="flex flex-wrap justify-center">
-            <div className="w-full md:w-1/4 sm:w-1/2 p-4 flex justify-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: '18rem' }}>
-                <Image src="/images/box-imgg.png" className="w-full" alt="..." width={288} height={288} />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">Polo T-Shirt</h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-through">1305</span> <span className="price">₹185</span> <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center">S M L XL <span>XXL</span></p>
-                </div>
-              </div>
-            </div>
-            {/* Add more cards as needed */}
-          </div>
-        </div>
-      </div>
-  {/* Different Product Section */}
-  <div className="Products-Container-Cards container mx-auto sm:px-4">
-    <ul
-      className="flex flex-wrap list-none pl-0 mb-0 border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-200 flex justify-center items-center p-6 gap-4 border-0"
-      id="myTab2"
-      role="tablist"
-    >
-      <li className="" role="presentation">
-        <button
-          className="inline-block py-2 px-4 no-underline uppercase active"
-          id="home-tab2"
-          data-bs-toggle="tab"
-          data-bs-target="#home2"
-          type="button"
-          role="tab"
-          aria-controls="home2"
-          aria-selected="true"
-        >
-          Shirt
-        </button>
+ 
+ <div className="flex justify-center mt-10">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="unique-tablist-1" data-tabs-toggle="#unique-tab-content-1" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+      <li class="me-2" role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab-1" data-tabs-target="#unique-profile-1" type="button" role="tab" aria-controls="profile-1" aria-selected="false">Profile</button>
       </li>
-      <li className="" role="presentation">
-        <button
-          className="inline-block py-2 px-4 no-underline uppercase"
-          id="profile-tab2"
-          data-bs-toggle="tab"
-          data-bs-target="#profile2"
-          type="button"
-          role="tab"
-          aria-controls="profile2"
-          aria-selected="false"
-        >
-          T-shirt
-        </button>
+      <li class="me-2" role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab-1" data-tabs-target="#unique-dashboard-1" type="button" role="tab" aria-controls="dashboard-1" aria-selected="false">Dashboard</button>
       </li>
-      <li className="" role="presentation">
-        <button
-          className="inline-block py-2 px-4 no-underline uppercase"
-          id="contact-tab1"
-          data-bs-toggle="tab"
-          data-bs-target="#contact1"
-          type="button"
-          role="tab"
-          aria-controls="contact1"
-          aria-selected="false"
-        >
-          Jeans
-        </button>
+      <li class="me-2" role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab-1" data-tabs-target="#unique-settings-1" type="button" role="tab" aria-controls="settings-1" aria-selected="false">Settings</button>
       </li>
-      <li className="" role="presentation">
-        <button
-          className="inline-block py-2 px-4 no-underline uppercase"
-          id="contact-tab2"
-          data-bs-toggle="tab"
-          data-bs-target="#contact2"
-          type="button"
-          role="tab"
-          aria-controls="contact2"
-          aria-selected="false"
-        >
-          Oversized
-        </button>
+      <li role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab-1" data-tabs-target="#unique-contacts-1" type="button" role="tab" aria-controls="contacts-1" aria-selected="false">Contacts</button>
       </li>
     </ul>
-    <div className="tab-content" id="myTabContent2">
-      <div
-        className="tab-pane opacity-0 opacity-100 block active"
-        id="home2"
-        role="tabpanel"
-        aria-labelledby="home-tab2"
-      >
-        {/* Shirt content cards go here */}
-        <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
-          <div className="flex flex-wrap ">
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-img.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    white shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imgg.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    polo t-shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
-                <img
-                  src="images/box-images.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Jeans
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imagess.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Pyjamas
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="tab-pane opacity-0"
-        id="profile2"
-        role="tabpanel"
-        aria-labelledby="profile-tab2"
-      >
-        {/* T-shirt content cards go here */}
-        <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
-          <div className="flex flex-wrap ">
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-img.png"
-                
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    white shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imgg.png"
-                  className="w-full rounded rounded-t"
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    polo t-shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-images.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Jeans
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imagess.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Pyjamas
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="tab-pane opacity-0"
-        id="contact1"
-        role="tabpanel"
-        aria-labelledby="contact-tab1"
-      >
-        {/* Jeans content cards go here */}
-        <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
-          <div className="flex flex-wrap ">
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words  bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-img.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    white shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imgg.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    polo t-shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-images.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Jeans
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0  break-words  bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imagess.png"
-                  className="w-full"
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Pyjamas
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="tab-pane opacity-0"
-        id="contact2"
-        role="tabpanel"
-        aria-labelledby="contact-tab2"
-      >
-        {/* Oversized content cards go here */}
-        <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
-          <div className="flex flex-wrap ">
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0  break-words bg-white" style={{ width: "18rem" }}>
-                <img
-                  src="images/box-img.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    white shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0  break-words  bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imgg.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    polo t-shirt
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-images.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Jeans
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
-              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
-                <img
-                  src="images/box-imagess.png"
-                  className="w-full "
-                  alt="..."
-                />
-                <div className="flex-auto p-6">
-                  <h5 className="mb-3 uppercase text-center">
-                    Pyjamas
-                  </h5>
-                  <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
-                  </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
+<div id="unique-tab-content-1">
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-profile-1" role="tabpanel" aria-labelledby="profile-tab-1">
+    {/* first content goes here */}
+
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-dashboard-1" role="tabpanel" aria-labelledby="dashboard-tab-1">
+    {/* second content goes here */}
+
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-settings-1" role="tabpanel" aria-labelledby="settings-tab-1">
+    {/* Third content goes here */}
+
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-contacts-1" role="tabpanel" aria-labelledby="contacts-tab-1">
+    {/* Fourth content goes here */}
+
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+</div>
+
+<div className="flex justify-center">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+      <li class="me-2" role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+      </li>
+      <li class="me-2" role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+      </li>
+      <li class="me-2" role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+      </li>
+      <li role="presentation">
+        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id="default-styled-tab-content">
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-styled-tab">
+    {/* first content goes here */}
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-styled-tab">
+    {/* second content goes here */}
+
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-styled-tab">
+    {/* Third content goes here */}
+
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-styled-tab">
+    {/* Fourth content goes here */}
+
+    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+          <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-img.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    white shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imgg.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    polo t-shirt
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white" style={{ width: "18rem" }}>
+                <img
+                  src="images/box-images.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Jeans
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
+              <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
+                <img
+                  src="images/box-imagess.png"
+                  className="w-full "
+                  alt="..."
+                />
+                <div className="flex-auto p-6">
+                  <h5 className="mb-3 uppercase text-center">
+                    Pyjamas
+                  </h5>
+                  <p className="mb-0 text-center">
+                    <span className="line-tho">1305</span>{" "}
+                    <span className="price">₹185</span>{" "}
+                    <span className="percent-off">11%</span>
+                  </p>
+                  <p className="text-center letter">
+                    S M L XL <span className="xll">XXL</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+</div>
   <div className="view-button container mx-auto sm:px-4 text-center">
-    <button className="view-btn uppercase">view all</button>
+    <button className="view-btn uppercase border border-black">view all</button>
   </div>
   {/* Product Sale Image Section */}
   <div className="Product-Sale-Image-Container container mx-auto sm:px-4">
@@ -1058,7 +1325,7 @@ export default function Home() {
     <div className="Spotlight-Cards container mx-auto sm:px-4 flex justify-center items-center mt-3">
       <div className="flex flex-wrap ">
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-1">
+          <div className="spotlight-card-1 bg-[url('../public/images/Spotlight-1.png')]">
             .
             <a
               target="_blank"
@@ -1069,7 +1336,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-2">
+          <div className="spotlight-card-2 bg-[url('../public/images/Spotlight-2.png')]">
             .
             <a
               target="_blank"
@@ -1080,7 +1347,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-3">
+          <div className="spotlight-card-3 bg-[url('../public/images/Spotlight-3.png')]">
             .
             <a
               target="_blank"
@@ -1091,7 +1358,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-4">
+          <div className="spotlight-card-4 bg-[url('../public/images/Spotlight-4.png')]">
             .
             <a
               target="_blank"
@@ -1287,19 +1554,7 @@ export default function Home() {
 
    
     
-      <Script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></Script>
-      <Script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></Script>
-
-      {/* Swiper */}
-      <Script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></Script>
-
-      {/* Font Awesome Kit */}
-      <Script src="https://kit.fontawesome.com/f6c5bb05cf.js" crossorigin="anonymous"></Script>
-
-      {/* Bootstrap CDN's and Popper */}
-      <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></Script>
-      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></Script>
-      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></Script>
+=
 
       {/* Swiper Slider Initialization */}
       
