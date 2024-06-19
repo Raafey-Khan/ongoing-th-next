@@ -307,7 +307,7 @@ export default function Home() {
   
   <div className="Recently-Viewed-Flex-Boxes container mx-auto sm:px-4 flex justify-center items-center  mt-6 ">
     <div className="flex flex-wrap ">
-    <div className="Recently-Viewed-Flex-top container mx-auto sm:px-4 flex ">
+    <div className="Recently-Viewed-Flex-top container mx-auto sm:px-4 flex justify-between border-solid border border-black items-center mb-2 ">
     <p className="uppercase">Recently Viewed</p>
     <u className="uppercase">View all</u>
   </div>

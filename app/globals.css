@@ -255,13 +255,7 @@ color: #FFFFFF;
 
 
 
-.Recently-Viewed-Flex-top{
-  justify-content: space-between;
-  margin-top: 8rem;
-  align-items: center;
-  margin-bottom: 0.8rem;
- 
-}
+
 .splide__slide img{
   height: 150px !important;
   object-fit: contain !important;
