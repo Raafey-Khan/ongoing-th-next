@@ -121,8 +121,8 @@ export default function Home() {
   <title>Third Culture</title>
   
  
-  <div className="new-testing-tag">
-    <span>
+  <div className="new-testing-tag bg-gray-100 absolute w-[960px] h-[1000px] gap-0 opacity-[0px] z-[-1] top-12">
+    <span className=" flex flex-col justify-end h-[96%] ml-36 mt-8 p-8">
       {" "}
       <i className="fa-solid fa-arrow-right lowercase">
         {" "}
@@ -131,18 +131,18 @@ export default function Home() {
     </span>
   </div>
   {/* Sticky navbar section */}
-  <div className="sticky-navbar-section w-full text-center">
-    <span className="sticky-navbar-content">
+  <div className="sticky-navbar-section p-[0.8rem] bg-black w-full text-center">
+    <span className="sticky-navbar-content text-white text-base font-normal leading-6">
       FLAT 10% OFF ON YOUR 1ST PURCHASE <u>SHOP NOW</u>{" "}
     </span>
   </div>
   {/* Aside navbar  */}
   <nav className="navbarr">
-    <div className="nav-container w-full flex justify-content-evenly items-center">
+    <div className="nav-container w-full flex justify-content-evenly items-center py-8">
       <div className="flex flex-wrap  spread items-center ">
         <div className="w-full md:w-1/4 pr-4 pl-4 flex justify-center items-center">
           <div className="d-1 uppercase">
-            <span className="Men">Men</span>
+            <span className="Men  mr-8 text-[#5A5A5A] text-sm font-bold leading-[17.5px] tracking-[0.005em] text-left">Men</span>
            
           </div>
         </div>
@@ -151,30 +151,30 @@ export default function Home() {
             <img
               src="images/useef.png"
               alt=""
-              className="Main-content-header"
+              className="Main-content-header w-[335px] h-[51px] w-[158px] h-[75px]"
             />
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 justify-center items-center">
-          <div className="d-3  flex justify-center items-center gap-3">
-            <i className="fa-solid fa-magnifying-glass" />
-            <i className="fa-solid fa-user" />
-            <span className="login-txt">Login</span>
-            <i className="fa-solid fa-cart-shopping" />
+          <div className="d-3 text-base text-[#494949] mx-[0.3rem] my-0  flex justify-center items-center gap-3">
+            <i className="fa-solid fa-magnifying-glass text-base text-[#494949] mx-[0.3rem] my-0" />
+            <i className="fa-solid fa-user text-base text-[#494949] mx-[0.3rem] my-0" />
+            <span className="login-txt text-base text-[#494949] mx-[0.3rem] my-0">Login</span>
+            <i className="fa-solid fa-cart-shopping text-base text-[#494949] mx-[0.3rem] my-0" />
           </div>
         </div>
       </div>
     </div>
   </nav>
   {/* Hero Image under aside */}
-  <div className="hero-flex-containerr flex">
-    <div className="first">
-      <div className="temp-hamburg">
+  <div className="hero-flex-containerr flex h-full w-full">
+    <div className="first basis-[8%">
+      <div className="temp-hamburg flex justify-center items-center mt-72">
         
 
 {/* <!-- drawer init and show --> */}
 <div class="text-center">
-   <button class="text-white    font-medium rounded-lg text-sm px-5 py-2.5 " type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+   <button class="text-gray font-medium rounded-lg text-sm px-5 py-2.5 " type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
    <i class="fa-solid fa-bars text-3xl"></i>
    </button>
 </div>
@@ -255,32 +255,32 @@ export default function Home() {
 
       </div>
     </div>
-    <div className="second">
+    <div className="second basis-[94%] overflow-hidden mb-8">
       <div
         id="carouselExampleAutoplaying"
-        className="carousel slide"
+        className="carousel slide h-screen relative"
         data-bs-ride="carousel"
       >
-        <div className="carousel-inner">
-          <div className="carousel-item wrapper bg-[url('../public/images/hero-img.png')] carousel-image-control active">
-            <div className="carousel-inner-txt">
-              <p className="year-carousel-txt">2016</p>
-              <p className="wheather-carousel-txt uppercase">Summer</p>
-              <p className="month-speciality-text uppercase">collection</p>
+        <div className="carousel-inner  h-full overflow-visible">
+          <div className="carousel-item !h-full wrapper bg-[url('../public/images/hero-img.png')] carousel-image-control bg-cover h-[592px] bg-no-repeat active">
+            <div className="carousel-inner-txt  w-fit w-2/5 -rotate-90 mt-52">
+              <p className="year-carousel-txt font-normal text-[40px] leading-[60pxx] text-white text-end">2016</p>
+              <p className="wheather-carousel-txt font-bold text-[80px] leading-[10px] text-end text-white mr-2 uppercase">Summer</p>
+              <p className="month-speciality-text text-6xl font-normal leading-[96px] text-left text-white uppercase">collection</p>
             </div>
           </div>
-          <div className="carousel-item wrapper-1 bg-[url('../public/images/hero-img.png')]">
-            <div className="carousel-inner-txt">
-              <p className="year-carousel-txt">2016</p>
-              <p className="wheather-carousel-txt uppercase">Summer</p>
-              <p className="month-speciality-text uppercase">collection</p>
+          <div className="carousel-item !h-full wrapper-1 bg-[url('../public/images/hero-img.png')] bg-cover h-[592px] bg-no-repeat">
+            <div className="carousel-inner-txt  w-fit w-2/5 -rotate-90 mt-52">
+              <p className="year-carousel-txt font-normal text-[40px] leading-[60pxx] text-white text-end">2016</p>
+              <p className="wheather-carousel-txt font-bold text-[80px] leading-[10px] text-end text-white mr-2 uppercase">Summer</p>
+              <p className="month-speciality-text text-6xl font-normal leading-[96px] text-left text-white uppercase">collection</p>
             </div>
           </div>
-          <div className="carousel-item wrapper-2 bg-[url('../public/images/hero-img.png')]">
-            <div className="carousel-inner-txt">
-              <p className="year-carousel-txt">2016</p>
-              <p className="wheather-carousel-txt uppercase">Summer</p>
-              <p className="month-speciality-text uppercase">collection</p>
+          <div className="carousel-item !h-full wrapper-2 bg-[url('../public/images/hero-img.png')] bg-cover h-[592px] bg-no-repeat">
+            <div className="carousel-inner-txt  w-fit w-2/5 -rotate-90 mt-52">
+              <p className="year-carousel-txt font-normal text-[40px] leading-[60pxx] text-white text-end">2016</p>
+              <p className="wheather-carousel-txt font-bold text-[80px] leading-[10px] text-end text-white mr-2 uppercase">Summer</p>
+              <p className="month-speciality-text text-6xl font-normal leading-[96px] text-left text-white uppercase">collection</p>
             </div>
           </div>
         </div>
@@ -305,11 +305,11 @@ export default function Home() {
   </div>
   {/* Recently Viewed Section */}
   
-  <div className="Recently-Viewed-Flex-Boxes container mx-auto sm:px-4 flex justify-center items-center  mt-6 ">
+  <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] container mx-auto sm:px-4 flex justify-center items-center  mt-28 ">
     <div className="flex flex-wrap ">
-    <div className="Recently-Viewed-Flex-top container mx-auto sm:px-4 flex justify-between border-solid border border-black items-center mb-2 ">
-    <p className="uppercase">Recently Viewed</p>
-    <u className="uppercase">View all</u>
+    <div className="Recently-Viewed-Flex-top mt-32 container mx-auto sm:px-4 flex justify-between  items-center mb-2 ">
+    <p className="uppercase text-[#5A5A5A] font-bold text-xl leading-[25px] mt-4">Recently Viewed</p>
+    <u className="uppercase font-bold text-[13px] leading-[16.25px] text-[#5A5A5A]">View all</u>
   </div>
       <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
         <div className="relative flex flex-col min-w-0 rounded break-words bor bg-white " style={{ width: "18rem" }}>
@@ -319,9 +319,9 @@ export default function Home() {
               white shirt
             </h5>
             <p className="mb-0 text-center">
-              <span className="line-tho">1305</span>{" "}
-              <span className="price">₹185</span>{" "}
-              <span className="percent-off">11%</span>
+              <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+              <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+              <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
             </p>
             <p className="text-center">
               <i className="fa-solid fa-star" />
@@ -341,9 +341,9 @@ export default function Home() {
               white shirt
             </h5>
             <p className="mb-0 text-center">
-              <span className="line-tho">1305</span>{" "}
-              <span className="price">₹185</span>{" "}
-              <span className="percent-off">11%</span>
+              <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+              <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+              <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
             </p>
             <p className="text-center">
               <i className="fa-solid fa-star" />
@@ -363,9 +363,9 @@ export default function Home() {
               white shirt
             </h5>
             <p className="mb-0 text-center">
-              <span className="line-tho">1305</span>{" "}
-              <span className="price">₹185</span>{" "}
-              <span className="percent-off">11%</span>
+              <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+              <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+              <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
             </p>
             <p className="text-center">
               <i className="fa-solid fa-star" />
@@ -389,9 +389,9 @@ export default function Home() {
               white shirt
             </h5>
             <p className="mb-0 text-center">
-              <span className="line-tho">1305</span>{" "}
-              <span className="price">₹185</span>{" "}
-              <span className="percent-off">11%</span>
+              <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+              <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+              <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
             </p>
             <p className="text-center">
               <i className="fa-solid fa-star" />
@@ -406,8 +406,8 @@ export default function Home() {
     </div>
   </div>
   {/* Shop By Collection Eclipse Slider */}
-  <div className="Shop-By-Collection-Container container mx-auto sm:px-4">
-    <p className="heading-txt text-center">Shop By Collection</p>
+  <div className="Shop-By-Collection-Container h-[300px] w-[1250px] container mx-auto sm:px-4">
+    <p className="heading-txt text-center  text-[19px] font-semibold leading-[25px] tracking-[0.005em] text-left text-[#5A5A5A] mt-[0.3rem]">Shop By Collection</p>
     <div className="splide container mx-auto sm:px-4">
       <div className="splide__track">
         <div className="splide__list">
@@ -415,64 +415,64 @@ export default function Home() {
             <div className="img_box">
               <img src="images/round1.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              shirt
             </p>
           </div>
           <div className="splide__slide">
             <div className="img_box">
               <img src="images/round2.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              t-shirt
             </p>
           </div>
           <div className="splide__slide">
             <div className="img_box">
               <img src="images/round3.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              jeans
             </p>
           </div>
           <div className="splide__slide">
             <div className="img_box">
               <img src="images/round-4.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              trouser
             </p>
           </div>
           <div className="splide__slide">
             <div className="img_box">
               <img src="images/round-5.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              cargos
             </p>
           </div>
           <div className="splide__slide">
             <div className="img_box">
               <img src="images/round6.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              pyjamas
             </p>
           </div>
           <div className="splide__slide">
             <div className="img_box">
               <img src="images/round1.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              shirt
             </p>
           </div>
           <div className="splide__slide">
             <div className="img_box">
               <img src="images/round2.png" alt="" />
             </div>
-            <p className="Shop-By-Collection-boxes-p text-center">
-              helo worlld
+            <p className="Shop-By-Collection-boxes-p text-uppercase mt-3  text-[13px] font-bold leading-[25px] tracking-[0.005em] text-center text-[#5A5A5A] mr-8 mt-[0.3rem]; text-center">
+              t-shirt
             </p>
           </div>
         </div>
@@ -481,8 +481,8 @@ export default function Home() {
     {/* splide js cdn */}
   </div>
   {/* Banner Image On hover effect container */}
-  <div className="Bannner-Image-Container container mx-auto sm:px-4">
-    <img src="images/banner.png" alt="" />
+  <div className="Bannner-Image-Container container mx-auto sm:px-4  h-[500px] w-[350px] overflow-hidden">
+    <img src="images/banner.png" className="object-cover w-full h-full" alt="" />
   </div>
   {/* New Collections and Trending Section */}
   {/* <div class="new-collections text-center container mx-auto sm:px-4">
@@ -495,28 +495,26 @@ export default function Home() {
      </div> */}
  
  <div className="flex justify-center mt-10">
-  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="unique-tablist-1" data-tabs-toggle="#unique-tab-content-1" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-      <li class="me-2" role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab-1" data-tabs-target="#unique-profile-1" type="button" role="tab" aria-controls="profile-1" aria-selected="false">Profile</button>
-      </li>
-      <li class="me-2" role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab-1" data-tabs-target="#unique-dashboard-1" type="button" role="tab" aria-controls="dashboard-1" aria-selected="false">Dashboard</button>
-      </li>
-      <li class="me-2" role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab-1" data-tabs-target="#unique-settings-1" type="button" role="tab" aria-controls="settings-1" aria-selected="false">Settings</button>
-      </li>
-      <li role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab-1" data-tabs-target="#unique-contacts-1" type="button" role="tab" aria-controls="contacts-1" aria-selected="false">Contacts</button>
-      </li>
-    </ul>
+  <div className="mb-4  dark:border-gray-700 ">
+  <ul className="flex flex-wrap -mb-px text-sm font-medium text-center gap-6" id="unique-tablist-1" data-tabs-toggle="#unique-tab-content-1" data-tabs-active-classes="text-gray-700 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-500 border-b-2 border-gray-600 dark:border-gray-500" data-tabs-inactive-classes="text-gray-500 hover:text-gray-600 dark:text-gray-400">
+  <li className="me-2" role="presentation">
+    <button className="inline-block p-4 rounded-t-lg text-uppercase" id="profile-tab-1" data-tabs-target="#unique-profile-1" type="button" role="tab" aria-controls="profile-1" aria-selected="false">new collection</button>
+  </li>
+  <li className="me-2" role="presentation">
+    <button className="inline-block p-4 rounded-t-lg text-uppercase" id="dashboard-tab-1" data-tabs-target="#unique-dashboard-1" type="button" role="tab" aria-controls="dashboard-1" aria-selected="false">trending</button>
+  </li>
+ 
+
+  
+</ul>
+
   </div>
 </div>
 <div id="unique-tab-content-1">
-  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-profile-1" role="tabpanel" aria-labelledby="profile-tab-1">
+  <div className="hidden p-4 rounded-lg" id="unique-profile-1" role="tabpanel" aria-labelledby="profile-tab-1">
     {/* first content goes here */}
 
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -530,12 +528,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through ">XXL</span>
                   </p>
                 </div>
               </div>
@@ -552,12 +550,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -574,12 +572,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -596,12 +594,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -610,10 +608,10 @@ export default function Home() {
         </div>
 
   </div>
-  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-dashboard-1" role="tabpanel" aria-labelledby="dashboard-tab-1">
+  <div className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-dashboard-1" role="tabpanel" aria-labelledby="dashboard-tab-1">
     {/* second content goes here */}
 
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -627,12 +625,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -649,12 +647,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -671,12 +669,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -693,12 +691,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -710,7 +708,7 @@ export default function Home() {
   <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-settings-1" role="tabpanel" aria-labelledby="settings-tab-1">
     {/* Third content goes here */}
 
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -724,12 +722,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -746,12 +744,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -768,12 +766,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -790,12 +788,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -807,7 +805,7 @@ export default function Home() {
   <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="unique-contacts-1" role="tabpanel" aria-labelledby="contacts-tab-1">
     {/* Fourth content goes here */}
 
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -821,12 +819,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -843,12 +841,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -865,12 +863,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -887,12 +885,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -904,27 +902,28 @@ export default function Home() {
 </div>
 
 <div className="flex justify-center">
-  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-      <li class="me-2" role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-      </li>
-      <li class="me-2" role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
-      </li>
-      <li class="me-2" role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
-      </li>
-      <li role="presentation">
-        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
-      </li>
-    </ul>
+  <div class="mb-4 dark:border-gray-700">
+  <ul class="flex flex-wrap -mb-px text-sm font-medium text-center gap-4" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-gray-700 hover:text-gray-700 dark:text-gray-500 dark:hover:text-gray-500 border-b-2 border-gray-600 dark:border-gray-500" data-tabs-inactive-classes="text-gray-500 hover:text-gray-600 dark:text-gray-400">
+  <li class="me-2" role="presentation">
+    <button class="inline-block p-4 rounded-t-lg text-uppercase" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">shirt</button>
+  </li>
+  <li class="me-2" role="presentation">
+    <button class="inline-block p-4 rounded-t-lg text-uppercase" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">t-shirt</button>
+  </li>
+  <li class="me-2" role="presentation">
+    <button class="inline-block p-4 rounded-t-lg text-uppercase" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">jeans</button>
+  </li>
+  <li role="presentation">
+    <button class="inline-block p-4 rounded-t-lg text-uppercase" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">oversized</button>
+  </li>
+</ul>
+
   </div>
 </div>
 <div id="default-styled-tab-content">
-  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-styled-tab">
+  <div class="hidden p-4 rounded-lg " id="styled-profile" role="tabpanel" aria-labelledby="profile-styled-tab">
     {/* first content goes here */}
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -938,12 +937,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -960,12 +959,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -982,12 +981,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1004,12 +1003,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1021,7 +1020,7 @@ export default function Home() {
   <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-styled-tab">
     {/* second content goes here */}
 
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -1035,12 +1034,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1057,12 +1056,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1079,12 +1078,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1101,12 +1100,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1118,7 +1117,7 @@ export default function Home() {
   <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-styled-tab">
     {/* Third content goes here */}
 
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -1132,12 +1131,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1154,12 +1153,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1176,12 +1175,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1198,12 +1197,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1215,7 +1214,7 @@ export default function Home() {
   <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-styled-tab">
     {/* Fourth content goes here */}
 
-    <div className="Recently-Viewed-Flex-Boxes Product-boxes container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
+    <div className="Recently-Viewed-Flex-Boxes h-full mb-8 gap-[1.6rem] Product-boxes mb-4 container mx-auto sm:px-4 flex  mt-3 new-collection-contain">
           <div className="flex flex-wrap ">
             <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center ">
               <div className="relative flex flex-col min-w-0 break-words bg-white " style={{ width: "18rem" }}>
@@ -1229,12 +1228,12 @@ export default function Home() {
                     white shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1251,12 +1250,12 @@ export default function Home() {
                     polo t-shirt
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1273,12 +1272,12 @@ export default function Home() {
                     Jeans
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1295,12 +1294,12 @@ export default function Home() {
                     Pyjamas
                   </h5>
                   <p className="mb-0 text-center">
-                    <span className="line-tho">1305</span>{" "}
-                    <span className="price">₹185</span>{" "}
-                    <span className="percent-off">11%</span>
+                    <span className="line-tho line-through text-[0.7rem]">1305</span>{" "}
+                    <span className="price text-[1.2rem] font-[bold]">₹185</span>{" "}
+                    <span className="percent-off text-neutral-50 bg-[#5A5A5A] text-[0.7rem] p-[0.1rem]">11%</span>
                   </p>
-                  <p className="text-center letter">
-                    S M L XL <span className="xll">XXL</span>
+                  <p className="text-center letter tracking-[3px] text-sm text-[#BBBBBB]">
+                    S M L XL <span className="xll tracking-[3px] text-sm text-[#BBBBBB] line-through">XXL</span>
                   </p>
                 </div>
               </div>
@@ -1310,61 +1309,61 @@ export default function Home() {
 
   </div>
 </div>
-  <div className="view-button container mx-auto sm:px-4 text-center">
-    <button className="view-btn uppercase border border-black">view all</button>
+  <div className="view-button  container mx-auto sm:px-4 text-center h-[100px] p-4">
+    <button className="view-btn  uppercase border border-black">view all</button>
   </div>
   {/* Product Sale Image Section */}
-  <div className="Product-Sale-Image-Container container mx-auto sm:px-4">
-    <img src="images/discount.png" alt="" />
+  <div className="Product-Sale-Image-Container h-full w-full overflow-hidden flex flex-col justify-center items-center mt-8 container mx-auto sm:px-4">
+    <img className="object-cover h-[512px] w-[1080px]" src="images/discount.png" alt="" />
   </div>
   {/* Spotlight Section */}
-  <div className="Spotlight-section container mx-auto sm:px-4">
-    <div className="Spotlight-header-txt">
-      <h3 className="uppercase text-center">tc spotlight on</h3>
+  <div className="Spotlight-section container mx-auto sm:px-4  h-full w-full flex flex-col justify-center items-center mt-12 p-4">
+    <div className="Spotlight-header-txt ">
+      <h3 className="uppercase text-center font-medium leading-[45px] text-4xl text-[#5A5A5A]">tc spotlight on</h3>
     </div>
-    <div className="Spotlight-Cards container mx-auto sm:px-4 flex justify-center items-center mt-3">
+    <div className="Spotlight-Cards w-[1100px] overflow-hidden gap-8 p-2 container mx-auto sm:px-4 flex justify-center items-center mt-3">
       <div className="flex flex-wrap ">
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-1 bg-[url('../public/images/Spotlight-1.png')]">
+          <div className="spotlight-card-1 bg-[url('../public/images/Spotlight-1.png')] h-[423px] w-60 overflow-hidden mt-8 flex justify-center items-center bg-no-repeat bg-center">
             .
             <a
               target="_blank"
               href="https://www.youtube.com/watch?v=y5Cm8b4pN-s"
             >
-              <img src="images/play-solid (2) 2.png" alt="" />
+              <img className="object-cover relative" src="images/play-solid (2) 2.png" alt="" />
             </a>
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-2 bg-[url('../public/images/Spotlight-2.png')]">
+          <div className="spotlight-card-2 bg-[url('../public/images/Spotlight-2.png')] h-[423px] w-60 overflow-hidden mt-8 flex justify-center items-center bg-no-repeat bg-center">
             .
             <a
               target="_blank"
               href="https://www.youtube.com/watch?v=y5Cm8b4pN-s"
             >
-              <img src="images/play-solid (2) 2.png" alt="" />
+              <img className="object-cover relative" src="images/play-solid (2) 2.png" alt="" />
             </a>
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-3 bg-[url('../public/images/Spotlight-3.png')]">
+          <div className="spotlight-card-3 bg-[url('../public/images/Spotlight-3.png')] h-[423px] w-60 overflow-hidden mt-8 flex justify-center items-center bg-no-repeat bg-center">
             .
             <a
               target="_blank"
               href="https://www.youtube.com/watch?v=y5Cm8b4pN-s"
             >
-              <img src="images/play-solid (2) 2.png" alt="" />
+              <img className="object-cover relative" src="images/play-solid (2) 2.png" alt="" />
             </a>
           </div>
         </div>
         <div className="w-full md:w-1/4 pr-4 pl-4 sm:w-1/2 pr-4 pl-4 flex justify-center">
-          <div className="spotlight-card-4 bg-[url('../public/images/Spotlight-4.png')]">
+          <div className="spotlight-card-4 bg-[url('../public/images/Spotlight-4.png')] h-[423px] w-60 overflow-hidden mt-8 flex justify-center items-center bg-no-repeat bg-center">
             .
             <a
               target="_blank"
               href="https://www.youtube.com/watch?v=y5Cm8b4pN-s"
             >
-              <img src="images/play-solid (2) 2.png" alt="" />
+              <img className="object-cover relative" src="images/play-solid (2) 2.png" alt="" />
             </a>
           </div>
         </div>
@@ -1372,14 +1371,14 @@ export default function Home() {
     </div>
   </div>
   {/* Customer Review and Testimonial Section */}
-  <div className="Customer-Review-Testimonial-Container container mx-auto sm:px-4">
-    <div className="crt-background-img">
-      <div className="crt-content">
-        <p className="review-txt uppercase">10k + review</p>
-        <h4 className="customer-review uppercase">our customer review</h4>
-        <img className="quotation-img" src="images/quote 1.png" alt="" />
-        <div className="customer-review-txt">
-          <p>
+  <div className="Customer-Review-Testimonial-Container container mx-auto sm:px-4  h-full w-[1080px] overflow-hidden mt-12">
+    <div className="crt-background-img  bg-[url(../public/images/crt-image.png)] bg-no-repeat bg-cover h-full w-full flex items-center text-[white] flex-col">
+      <div className="crt-content flex justify-center items-center text-[white] flex-col h-full w-full mt-8">
+        <p className="review-txt text-[1.3rem] mt-10 uppercase">10k + review</p>
+        <h4 className="customer-review text-[2rem] uppercase">our customer review</h4>
+        <img className="quotation-img mx-0 my-[1.6rem]" src="images/quote 1.png" alt="" />
+        <div className="customer-review-txt  w-[37rem] text-center">
+          <p className="text-[1.2rem] font-thin">
             I had a treatment done to my hair which made them really prone to
             hair fall. This hair treatment oil really worked. Just use it
             religiously and you will not be disappointed.
@@ -1462,80 +1461,80 @@ export default function Home() {
     </div>
   </div>
   {/* Footer Section */}
-  <div className="background-rect">
-    <footer className="culture-future-footer container mx-auto sm:px-4">
-      <div className="about-footer-labels flex justify-center items-center">
-        <div className="label1 ">
+  <div className="background-rect bg-[#F6F6F6] pb-16">
+    <footer className="culture-future-footer  h-full w-[1280px] mt-32 p-8 container mx-auto sm:px-4">
+      <div className="about-footer-labels h-[200px] w-full gap-60 flex justify-center items-center">
+        <div className="label1 text-center h-[120px] w-[200px] flex justify-center items-center flex-col">
           <img src="images/award-solid (2) 1.png" alt="" />
-          <div className="label1-abt">Premium Quality Products</div>
+          <div className="label1-abt mt-[1.4rem">Premium Quality Products</div>
         </div>
-        <div className="label2">
+        <div className="label2 text-center h-[120px] w-[200px] flex justify-center items-center flex-col">
           <img src="images/shield-halved-solid 1.png" alt="" />
-          <div className="label2-abt">Secure payment</div>
+          <div className="label2-abt mt-[1.4rem">Secure payment</div>
         </div>
-        <div className="label3">
+        <div className="label3 text-center h-[120px] w-[200px] flex justify-center items-center flex-col">
           <img src="images/rotate-left-solid (1) 1.png" alt="" />
-          <div className="label3-abt">10 days return policy</div>
+          <div className="label3-abt mt-[1.4rem">10 days return policy</div>
         </div>
       </div>
-      <div className="second-last-footer-container flex justify-center items-center">
-        <div className="foot-sub-txt-1">
-          <img src="images/Third-Culture-Logo.png" alt="" />
-          <div className="social-media-footer-logos">
-            <img src="images/linkedin-in 1.png" alt="" className="linkedin" />
-            <img src="images/instagram 1.png" alt="" className="instagram" />
-            <img src="images/x-twitter 1.png" alt="" className="twitter" />
-            <img src="images/x-twitter 1.png" alt="" className="facebook" />
+      <div className="second-last-footer-container  w-full h-[300px] gap-[1.2rem] mt-4 p-4 border-b-2 border-b-[#DBDBDB] border-solid flex justify-center items-center">
+        <div className="foot-sub-txt-1 h-[220px] w-[205px] p-2">
+          <img className="h-20 w-[50x] object-cover mt-[0.7rem]" src="images/Third-Culture-Logo.png" alt="" />
+          <div className="social-media-footer-logos flex gap-4 h-[30px] items-center justify-center mt-6">
+            <img  src="images/linkedin-in 1.png" alt="" className="linkedin h-5 w-5 object-cover]" />
+            <img src="images/instagram 1.png" alt="" className="instagram h-5 w-5 object-cover]" />
+            <img src="images/x-twitter 1.png" alt="" className="twitter h-5 w-5 object-cover]" />
+            <img src="images/x-twitter 1.png" alt="" className="facebook h-5 w-5 object-cover]" />
           </div>
         </div>
-        <div className="foot-sub-txt-2">
-          <p>Get to know us</p>
-          <ul>
-            <li>Contact us</li>
-            <li>Faqs</li>
-            <li>blogs</li>
-            <li>terms and condition</li>
+        <div className="foot-sub-txt-2 text-left h-[220px] w-[205px] p-2">
+          <p className="font-extrabold text-[#484848] mt-2">Get to know us</p>
+          <ul className="m-0 p-0">
+            <li className="list-none mt-[0.2rem]">Contact us</li>
+            <li className="list-none mt-[0.2rem]">Faqs</li>
+            <li className="list-none mt-[0.2rem]">blogs</li>
+            <li className="list-none mt-[0.2rem]">terms and condition</li>
           </ul>
         </div>
-        <div className="foot-sub-txt-3">
-          <p>Get to know us</p>
-          <ul>
-            <li>Contact us</li>
-            <li>Faqs</li>
-            <li>blogs</li>
-            <li>terms and condition</li>
+        <div className="foot-sub-txt-3 h-[220px] w-[205px] p-2">
+          <p className="font-extrabold text-[#484848] mt-2">Get to know us</p>
+          <ul className="m-0 p-0">
+            <li className="list-none mt-[0.2rem]">Contact us</li>
+            <li className="list-none mt-[0.2rem]">Faqs</li>
+            <li className="list-none mt-[0.2rem]">blogs</li>
+            <li className="list-none mt-[0.2rem]">terms and condition</li>
           </ul>
         </div>
-        <div className="foot-sub-txt-4">
-          <p>Get to know us</p>
-          <ul>
-            <li>Contact us</li>
-            <li>Faqs</li>
-            <li>blogs</li>
-            <li>terms and condition</li>
+        <div className="foot-sub-txt-4 h-[220px] w-[205px] p-2">
+          <p className="font-extrabold text-[#484848] mt-2">Get to know us</p>
+          <ul className="m-0 p-0">
+            <li className="list-none mt-[0.2rem]">Contact us</li>
+            <li className="list-none mt-[0.2rem]">Faqs</li>
+            <li className="list-none mt-[0.2rem]">blogs</li>
+            <li className="list-none mt-[0.2rem]">terms and condition</li>
           </ul>
         </div>
-        <div className="foot-sub-txt-5 flex flex-wrap">
-          <p>100% secure payment</p>
+        <div className="foot-sub-txt-5 gap-[0.1rem] flex flex-wrap h-[220px] w-[205px] p-2">
+          <p className="font-extrabold text-[#484848] mt-2 h-0">100% secure payment</p>
           <img
             src="images/1200px-Debit_Mastercard_logo 1.png"
             alt=""
-            className="payment-logos"
+            className="payment-logos h-10 w-[50px] bg-white object-contain ml-4 p-[7px] rounded-lg"
           />
           <img
             src="images/Google_Pay_Logo 1.png"
             alt=""
-            className="payment-logos"
+            className="payment-logos h-10 w-[50px] bg-white object-contain ml-4 p-[7px] rounded-lg"
           />
           <img
             src="images/Visa_Inc._logo 1.png"
             alt=""
-            className="payment-logos"
+            className="payment-logos h-10 w-[50px] bg-white object-contain ml-4 p-[7px] rounded-lg"
           />
-          <img src="images/PayPal 1 (1).png" alt="" className="payment-logos" />
+          <img src="images/PayPal 1 (1).png" alt="" className="payment-logos h-10 w-[50px] bg-white object-contain ml-4 p-[7px] rounded-lg" />
         </div>
       </div>
-      <p className="copy-write-text text-center">
+      <p className="copy-write-text mt-8 p-4 text-center">
         © Copyright 2024 - Third Culture Clothing Designed by Nexgeno
       </p>
     </footer>
