@@ -121,7 +121,7 @@ export default function Home() {
   <title>Third Culture</title>
   
  
-  <div className="new-testing-tag bg-gray-100 absolute w-[960px] h-[1000px] gap-0 opacity-[0px] z-[-1] top-12">
+  <div className="new-testing-tag bg-gray-200 absolute w-[960px] h-[1000px] gap-0 opacity-[0px] z-[-1] top-12">
     <span className=" flex flex-col justify-end h-[96%] ml-36 mt-8 p-8">
       {" "}
       <i className="fa-solid fa-arrow-right lowercase">
